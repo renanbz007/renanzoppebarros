@@ -1,0 +1,20 @@
+# renanzoppebarros
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define TAMANHO 5
+int main()
+{
+    int vetor[TAMANHO], indice ;
+    srand(time(NULL));
+    printf("vetor com %i termo aleatorio:\n", TAMANHO);
+    printf("vetor; [  ");
+    for(indice=0;indice<TAMANHO;indice++)
+    {
+        vetor[indice]= rand()%999 + 100;
+        printf(" %i ", vetor[indice]);
+
+    }
+    printf(" ]. \n");
+    return 0;
+}
